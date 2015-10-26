@@ -226,6 +226,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="c074d2e1-753b-42ca-8989-3804813ac286"
+            isDerived="false"
+            sourceEndRoleName="Dealer"
+            targetEndRoleName="IWinStrategy"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="7c0b2c4c-ea8c-46d3-b148-b1caf10b5cdd"
+              LastKnownName="IWinStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8fcb7f7c-fb43-42ad-979e-6f5dd01c45c9"
+                  name="Dealer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a410dbf-0c57-4166-85ac-bde1079b628f"
+                  name="IWinStrategy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a5d4c021-f4bc-4ce6-89f0-fba653fdec36"
+            isDerived="false"
+            sourceEndRoleName="Dealer"
+            targetEndRoleName="IGameObserver"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f8757fea-1d32-45be-afcd-7cb0bc9b447c"
+              LastKnownName="IGameObserver"
+              LastKnownLocation="Package1_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="242bf6c4-247b-49a4-ac50-bf940b16eaf3"
+                  name="Dealer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b493e28-cf71-4e7d-b6aa-e651e6c7cc65"
+                  name="IGameObserver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -382,6 +460,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="55385782-e34e-496f-83ad-aa65ba8abbb3">
+            <interfaceMoniker
+              Id="f8757fea-1d32-45be-afcd-7cb0bc9b447c"
+              LastKnownName="IGameObserver"
+              LastKnownLocation="Package1_0950.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="87296099-9a34-44e0-8455-4d19a7dd077d"
@@ -505,6 +592,13 @@
           </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f8757fea-1d32-45be-afcd-7cb0bc9b447c"
+        name="IGameObserver"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

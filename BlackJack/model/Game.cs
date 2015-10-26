@@ -39,6 +39,7 @@ namespace BlackJack.model
         public bool Stand()
         {
             // TODO: Implement this according to Game_Stand.sequencediagram
+            m_dealer.Stand();
             return true;
         }
 
@@ -60,6 +61,11 @@ namespace BlackJack.model
         public int GetPlayerScore()
         {
             return m_player.CalcScore();
+        }
+
+        public void AddObserver(IGameObserver observer)
+        {
+            m_dealer.AddObserver(observer);
         }
     }
 }

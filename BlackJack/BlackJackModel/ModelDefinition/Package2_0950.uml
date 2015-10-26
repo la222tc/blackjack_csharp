@@ -101,8 +101,71 @@
               LastKnownName="BasicHitStrategy"
               LastKnownLocation="Package2_0950.uml" />
           </dependency>
+          <dependency
+            Id="01c40936-87c6-45d8-a6df-dab9720ffcc0">
+            <classMoniker
+              Id="7dd5694e-ad1a-436f-bd46-2df73498a340"
+              LastKnownName="DealerWinEqualScore"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+          <dependency
+            Id="737d6c03-26a2-4230-9393-7f2c39072d0b">
+            <classMoniker
+              Id="07479d45-a93f-4b23-8b67-50e9311ce788"
+              LastKnownName="PlayerWinEqualScore"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
         </suppliersInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7c0b2c4c-ea8c-46d3-b148-b1caf10b5cdd"
+        name="IWinStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="07479d45-a93f-4b23-8b67-50e9311ce788"
+        name="PlayerWinEqualScore"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a1838a66-a053-4670-807e-d9f40081404d">
+            <interfaceMoniker
+              Id="7c0b2c4c-ea8c-46d3-b148-b1caf10b5cdd"
+              LastKnownName="IWinStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7dd5694e-ad1a-436f-bd46-2df73498a340"
+        name="DealerWinEqualScore"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="33c65058-e4e1-483b-91dc-d73b42c4cbd7">
+            <interfaceMoniker
+              Id="7c0b2c4c-ea8c-46d3-b148-b1caf10b5cdd"
+              LastKnownName="IWinStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e23ef2c0-ad10-41af-81c2-b0db210530ad"
+        LastKnownName="Observer"
+        LastKnownLocation="Package_1618.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
