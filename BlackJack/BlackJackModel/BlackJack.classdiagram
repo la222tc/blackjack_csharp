@@ -142,6 +142,10 @@
                         <classMoniker Id="c3d705ae-9e6c-4f29-bf88-aaf5ab5b8719" LastKnownName="PlayerWinEqualScore" />
                         <elementDefinition Id="737d6c03-26a2-4230-9393-7f2c39072d0b" />
                       </dependency>
+                      <dependency Id="120582a1-01e0-4d87-b320-1c45d231dd41">
+                        <classMoniker Id="0cf04ba7-a23c-4e58-9673-fc03c1eeded9" LastKnownName="Soft17Rule" />
+                        <elementDefinition Id="ead56da7-29d9-4cf7-b422-a6e3a74f5de7" />
+                      </dependency>
                     </suppliersInternal>
                   </class>
                 </packageHasNamedElement>
@@ -168,6 +172,17 @@
                       <interfaceRealization Id="e9159c1a-bf0b-4fc3-a152-35fbdfabb577">
                         <interfaceMoniker Id="aa107f1a-2c89-4eba-9bd6-860a7ce3a08b" LastKnownName="IWinStrategy" />
                         <elementDefinition Id="33c65058-e4e1-483b-91dc-d73b42c4cbd7" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="0cf04ba7-a23c-4e58-9673-fc03c1eeded9" name="Soft17Rule" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="ac4e1b0b-8ee2-4956-be70-de746593413b" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="10e57c86-0c7c-4fb2-9f4b-0121955ac935">
+                        <interfaceMoniker Id="22acfdec-0761-4843-b8bc-fed534391061" LastKnownName="IHitStrategy" />
+                        <elementDefinition Id="18da95ed-dca5-4b94-9736-4bc802b1093d" />
                       </interfaceRealization>
                     </suppliersInternal>
                   </class>
@@ -325,11 +340,31 @@
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="306771ee-e471-4dc2-a3cd-732d01c216b1" name="Dealer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="33f077e8-051f-4dda-8d1d-90ce72f059fe" name="Lower">
+                            <elementDefinition Id="edff5a84-58cd-41bf-b69b-3e2a337469ce" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="d71970e0-6849-4476-89f0-473481afcc44" name="Upper">
+                            <elementDefinition Id="0ed1c0f5-f22f-4d55-8d2c-67062bebb450" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="242bf6c4-247b-49a4-ac50-bf940b16eaf3" />
                       </memberEnd>
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
                       <memberEnd Id="33616309-7438-4c12-a4ca-3afc152f5bae" name="IGameObserver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="f1a968d5-0ddc-40f5-b348-b1449ab9ec8b" name="Lower">
+                            <elementDefinition Id="4f702344-372a-4069-8f71-0590ead26245" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="f3564216-4b80-4ef4-afb3-1d485fedb7ed" name="Upper">
+                            <elementDefinition Id="ecc65b45-b024-4669-88ec-8defc79b6d5c" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="6b493e28-cf71-4e7d-b6aa-e651e6c7cc65" />
                       </memberEnd>
                     </associationHasOwnedEnds>

@@ -115,6 +115,13 @@
               LastKnownName="PlayerWinEqualScore"
               LastKnownLocation="Package2_0950.uml" />
           </dependency>
+          <dependency
+            Id="ead56da7-29d9-4cf7-b422-a6e3a74f5de7">
+            <classMoniker
+              Id="ac4e1b0b-8ee2-4956-be70-de746593413b"
+              LastKnownName="Soft17Rule"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
@@ -166,6 +173,24 @@
         Id="e23ef2c0-ad10-41af-81c2-b0db210530ad"
         LastKnownName="Observer"
         LastKnownLocation="Package_1618.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ac4e1b0b-8ee2-4956-be70-de746593413b"
+        name="Soft17Rule"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="18da95ed-dca5-4b94-9736-4bc802b1093d">
+            <interfaceMoniker
+              Id="550cd927-6beb-4715-ac7e-1afec083ec6b"
+              LastKnownName="IHitStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>
